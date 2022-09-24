@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Gualter.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+     <h1>Imagens Dinâmicas</h1>
+     <p>Tente abrir este site em vários dispositivos diferentes ou simplesente aumente e diminua o tamanho do seu navegador</p>
+     <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+     </picture>
+     <h1>Reproduzindo Áudios</h1>
+     <p>Vamos aprender a reproduzir áudios em HTML5</p>
+     <h2>1ª FORMA DE COLOCAR ÁUDIO EM HTML5</h2>
+     <audio src="midias/Ex021a.mp3" controls autoplay></audio>  <!--Compatível com: MP3, WAV  e OGG-->
+     <h2>2ª FORMA DE COLOCAR AÚDIO EM HTML5 - AGORA COM LOOP DA MÚSICA</h2>
+     <audio preload="metadata" controls loop>
+        <source src="midias/Ex021c.mp3" type="audio/mpeg">
+     </audio>
+    
+</body>
+</html>

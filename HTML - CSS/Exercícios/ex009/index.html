@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Gualter.ico" type="image/x-icon">
+    <title>Listas ol  e  ul</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas <mark>ol  e  ul</mark> </h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>  <!--Essa linha foi acrescentada depois-->
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <!--O fechamento do <li> não é mais obrigatório a partir do HTML5. O </ol> sim.-->
+    </ol>
+    <h2>Listas Ordenadas com formatos diferentes - A, a, I, i (sem ser com numeração)</h2>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>  <!--Essa linha foi acrescentada depois-->
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <h2>Listas Ordenadas a partir de um numeral determinado</h2>
+    <ol type="1" start="4">   <!--Iniciando a partir do numeral 4-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>  <!--Essa linha foi acrescentada depois-->
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <h2>Listas NÃO ORDENADAS</h2>
+    <ul>  <!--<ul> sozinho aparece uma bolinha preta (disc). Ou pode ser circle (um círculo vazio)  ou  square (quadrado preto). Aí tem que fazer assim:    <ul type="square">    ou   <ul type="circle">-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Feijão</li>
+        <li>Manteiga</li>
+    </ul>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Feijão</li>
+        <li>Manteiga</li>
+    </ul>
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Feijão</li>
+        <li>Manteiga</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</l i>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a">  <!--Se quiser que continue a ordem a partir do último da lista de cima, só colocar o número referente à próxima letra. Não pode colocar a próxima letra e sim número referente a ela-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mário Bros</li>
+            <ul type="circle">
+                <li>Mário Bros 3</li>
+                <li>Mário: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mário</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Play Station</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de DEFINIÇÃO</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>
