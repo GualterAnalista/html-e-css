@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Gualter.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        /*
+        PARA USAR EM SELETORES PERSONALIZADOS
+        #   =   id
+        .   =   class
+        :   =   pseudo-class
+        ::  =   pseudo-element
+        >   =   children      
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {  /*esse "a" é referente ao link*/
+            color: blue;
+            text-decoration: none; /*Remove os sublinhados dos links*/
+            font-weight: bold;
+        }
+        a:visited {  /*Páginas visitadas ficam com cor vermelho escuro*/
+            color: darkred;
+        }
+        a:hover{ /* Quando passo o mouse fica na cor preto e sublinhado*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{ /* Quando clico em um link fica amarelo por uns instantes*/
+            color: yellow;
+        }
+        a::after{ /*Acrescento palavras ou imagens APÓS DO LINK*/
+            content: ' ⇦';       
+        }
+        a::before{ /*Acrescento palavras ou imagens ANTES DO LINK*/
+            content: '⇨ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do Curso em Vídeo</a></li>
+        <li><a href="https://github.com/GualterAnalista/Curso-Python/tree/master">Repositório GitHub Gualter</a></li>
+        
+    </ul>
+</body>
+</html>

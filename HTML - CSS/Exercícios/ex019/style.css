@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+    o que em HTML é id (aidí) na CSS é # (cerquilha, hashtag). Só pode 1 elemento por página
+
+    o que em HTML é class na CSS é . (ponto). Pode vários elementos por página
+*/
+
+body{
+    background-color: rgb(188, 240, 202);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:rgb(2, 44, 5) ;
+}
+
+    /*  FAZENDO UM SELETOR PERSONALIZADO NO H1 PRINCIPAL.
+        Abaixo temos vários SETORES PERSONALIZADOS */
+
+h1#principal{
+    text-align: center;  
+    background-color: green;
+    color: white;
+}
+
+h2{
+color: rgb(9, 136, 94);
+}
+
+.basico{
+    color: rgb(8, 24, 250);
+    font-weight: bold;
+}
+.intermediario{
+    color: rgb(88, 83, 8);
+}
+.avançado{
+    color: rgb(209, 15, 15);
+}
+.destaque{
+    background-color:rgb(204, 204, 91) ;
+}

@@ -8,10 +8,35 @@
     <title>Fontes em CSS</title>
     <style>
         body{
-            font-family:Arial, Helvetica, sans-serif;
+            font-family:work;
+            /*Medidas Absolutas
+                cm, mm, in (polegada), px (pixel), pt (ponto - usada no Word), pc (paica)
+
+            Medidas Relativas
+                em (tamanho atual da fonte do M maiúsculo), ex (altura x)
+                rem, vw (tamanho da tela), vh (altura da vw)
+                16px geralmente = 1em
+                CONCLUSÃO: devemos usar somente o "px da absoluta e o "em" da relativa.
+            */
+            font-size: 1em ; /* não pode ter espaço ente o nº e o cm */
         }
-        h1, h2{
-            font-family: 'Times New Roman', Times, serif;
+
+                /* USANDO NO H1 O SHORTHAND EM SUBSTITUIÇÃO ÀS SEGUINTES LINHAS:
+
+                font-style: italic;        
+                font-weight: bold;
+                font-size: 3em;
+                font-family: arial;
+
+                font-style -> font-weight -> font-size -> font-family (Sempre nessa ordem)
+                
+                */
+
+        h1{
+            font: italic bold 3em 'arial'     /* SHOTHAND: Com apenas uma linha substituo às linhas acima */
+        }
+        h2{
+            font: bold 2em 'Times New Roman'
         }
     </style>
 </head>
